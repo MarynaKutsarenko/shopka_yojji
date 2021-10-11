@@ -2,6 +2,11 @@
 *{
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -11,13 +16,13 @@ html {
   font-family: 'inter', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
+  width: 1920px;
+  margin: auto;
   box-sizing: border-box;
 }
+
+/* header */
 
 .header {
   display: flex;
@@ -111,3 +116,5 @@ body {
 /* .avatar {}
 
 .avatar-img {} */
+
+/* content */
