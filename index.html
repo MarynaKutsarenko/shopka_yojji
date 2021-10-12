@@ -39,7 +39,7 @@
 
         <div class="buttons-controll">
             <button class="btn btn-login">Sign in</button>
-            <button class="btn btn-cart">My cart </button>
+            <button class="btn btn-cart active">My cart </button>
 
             <div class="avatar">
                 <img src="./img/avatar.jpg" alt="avatar" class="avatar-img">
@@ -51,7 +51,7 @@
 
         <nav class="nav">
             <ul class="menu">
-                <li class="menu-item">
+                <li class="menu-item active">
                     <div class="cont">
                         <svg width="20" height="20" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="card-icon"
@@ -59,7 +59,7 @@
                         </svg>
                     </div>
 
-                    <span class="item-text">Clothing & Shoes</span>
+                    <span>Clothing & Shoes</span>
                 </li>
 
                 <li class="menu-item">
@@ -187,6 +187,98 @@
         </nav>
 
     </section>
+
+    <main class="main-content container">
+        <section class="sidebar">
+
+        </section>
+
+        <div class="content">
+
+            <div class="header-content">
+
+                <div class="content_select-group">
+                    <select id="select-first_child" class="content-select select-active">
+                        <option selected value="Uselest firs">Uselest firs</option>
+                        <option value="Uselest second">Uselest second</option>
+                    </select>
+                    <label for="select-first_child"></label>
+
+                    <select class="content-select">
+                        <option selected value="Uselest firs">Condition</option>
+                        <option value="Uselest second">Uselest second</option>
+                    </select>
+
+                    <select class="content-select">
+                        <option selected value="Uselest firs">Delivery options</option>
+                        <option value="Uselest second">Uselest second</option>
+                    </select>
+                </div>
+
+                <div class="content_controll-group">
+                    <button class="btn content-btn">Show all</button>
+                    <button class="btn content-btn active">Auction</button>
+                    <button class="btn content-btn">Buy now</button>
+                </div>
+
+                <div class="content_grid-group">
+                    <button class="btn-grid">
+                        <svg width="18" height="18" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="grid-icon "
+                                d="M5 0V4H17V0H5ZM5 14H17V10H5V14ZM5 9H17V5H5V9ZM0 4H4V0H0V4ZM0 14H4V10H0V14ZM0 9H4V5H0V9Z" />
+                        </svg>
+                    </button>
+
+                    <button class="btn-grid content-btn_active ">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="grid-icon " d="M0 8H8V0H0V8ZM0 18H8V10H0V18ZM10 18H18V10H10V18ZM10 0V8H18V0" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <ul class="content-menu menu">
+                <li class="content-item ">
+                    <a href="#" class="content-link content-item-active">Related</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">worldwide shipping</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">under $50</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">kitten</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">plastic plugs</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">pucker shoes</a>
+                </li>
+                <li class="content-item">
+                    <a href="#" class="content-link">vintage typewriter</a>
+                </li>
+            </ul>
+
+            <div class="wrapper">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/card-img/img_shoes.png" alt="image: shoes">
+                    </div>
+                    <p class="card-description">Vintage Typewriter to post awesome stories about UI design and webdev.
+                    </p>
+                    <span><b>$49.50</b></span>
+                    <p class="card-text">Eligible for Shipping To Mars or somewhere else</p>
+                    <div class="card-controll">
+                        <button class="btn">Watch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
 </body>
 
