@@ -139,6 +139,10 @@ input:focus {
   position: relative;
 }
 
+.card-btn {
+	float: right;
+}
+
 .btn-cart::after {
   content: "5";
   position: absolute;
@@ -392,8 +396,9 @@ input:focus {
   opacity: 1;
 }
 
-.input-label{
+.input-label {
   display: inline-block;
+	cursor: pointer;
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -425,6 +430,10 @@ input:focus {
   margin-bottom: 40px;
 }
 
+.content_select-group {
+  position: relative;
+}
+
 .content-select {
   position: relative;
   cursor: pointer;
@@ -432,21 +441,6 @@ input:focus {
 
 .content-select:not(:last-child) {
   margin-right: 15px;
-}
-
-#select-first_child+label::before {
-  content: "SORT BY";
-  position: absolute;
-  display: inline-block;
-  top: 42%;
-  left: 31%;
-  background: #fff;
-  padding: 0 3px;
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 9px;
-  line-height: 16px;
-  color: #787885;
 }
 
 select {
@@ -645,10 +639,14 @@ select.select-active {
 }
 /* content box */
 
-.content-box {
+.content-box,
+.footer-box {
   display: flex;
   max-width: 1114px;
   margin-left: auto;
+}
+
+.content-box {
   justify-content: space-between;
 	margin-bottom: 50px;
 }
@@ -657,7 +655,7 @@ select.select-active {
   width: 31%;
   background: #EDEDF0;
   border-radius: 8px;
-  padding: 16px;
+  padding: 26px 16px;
   text-align: center;
 }
 
@@ -667,7 +665,6 @@ select.select-active {
 }
 
 .box-title {
-  margin-bottom: 15px;
   font-family: 'Quicksand';
   font-weight: bold;
   font-size: 20px;
@@ -681,4 +678,67 @@ select.select-active {
   font-size: 14px;
   line-height: 143%;
   color: #5A5B6A;
+}
+
+.select-child {
+  display: inline-block;
+	position: absolute;
+  top: -8px;
+  left: 8px;
+  background: #fff;
+  padding: 0 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  line-height: 16px;
+  color: #787885;
+  z-index: 2;
+}
+
+/* styles for footer  */
+
+.footer {
+  padding: 30px 16px;
+  background: #F7F7FA;
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.footer-box {
+  flex-direction: column;
+}
+
+.footer-title {
+  margin-bottom: 25px;
+  color: #B1B1C4;
+}
+
+.footer-nav {
+  margin-bottom: 25px;
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.footer-item {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: #1F1F1F;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.footer-line {
+  background: #E6E6EA;
 }
