@@ -80,12 +80,14 @@ input:focus {
 }
 
 .search {
+  cursor: pointer;
   position: absolute;
   top: 23%;
   left: 2%;
 }
 
 .clear {
+  cursor: pointer;
   position: absolute;
   top: 22%;
   right: 2%;
@@ -158,9 +160,6 @@ input:focus {
 }
 
 /* navigation */
-.navigation {
-  /* margin: 0 auto; */
-}
 
 .container {
   margin: 0 auto;
@@ -239,7 +238,7 @@ input:focus {
   box-sizing: border-box;
   border-radius: 8px;
   padding: 10px 40px 10px 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .sidebar-ico {
@@ -257,7 +256,7 @@ input:focus {
   display: flex;
   position: relative;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   list-style-image: url("../img/arr.svg");
 
   font-size: 16px;
@@ -265,10 +264,10 @@ input:focus {
 }
 
 .list-item {
-  padding: 14px;
+  padding: 12px;
 }
 
-.sidebar-menu_list>li:hover {
+.sidebar-menu_list>.list-item:hover {
   box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24),
     0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 4px;
@@ -314,7 +313,7 @@ input:focus {
     0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 4px;
   padding: 16px 8px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .sidebar-dropbox:hover {
@@ -329,12 +328,12 @@ input:focus {
   font-family: 'Inter';
   background: #F7F7FA;
   border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 8px;
+  margin-bottom: 15px;
 }
 
 .dropbox-title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .dropbox-title-arr {
@@ -418,6 +417,7 @@ input:focus {
     0px 2px 4px rgba(90, 91, 106, 0.24);
   border-radius: 8px;
   padding: 16px;
+  margin-bottom: 30px;
 }
 
 .header-content {
@@ -642,4 +642,43 @@ select.select-active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+/* content box */
+
+.content-box {
+  display: flex;
+  max-width: 1114px;
+  margin-left: auto;
+  justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.box-info {
+  width: 31%;
+  background: #EDEDF0;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.box-img {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.box-title {
+  margin-bottom: 15px;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.box-text {
+  font-family: 'Inter';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143%;
+  color: #5A5B6A;
 }
