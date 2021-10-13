@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ShopkaProjectYojji</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -55,7 +56,7 @@
     <section class="navigation">
         <div class="container">
             <nav class="nav">
-                <ul class="menu">
+                <ul class="menu nav-menu">
                     <li class="menu-item active">
                         <div class="cont">
                             <svg width="20" height="20" viewBox="0 0 20 17" fill="none"
@@ -222,46 +223,71 @@
                         <h3 class="title">Departments</h3>
                     </div>
 
-                    <div class="sidebar-grop_text">
-                        <p class="grop-title">All Categories</p>
-                        <span class="subtitle">Ecommerce patterns</span>
-                    </div>
+										<ul class="sidebar-grop_text">
+											<li class="grop-title">
+												All Categories
+												<span class="subtitle">Ecommerce patterns</span>
+												<ul class="sidebar-menu">
+														<li class="sidebar-item">
+																<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
+																</svg>
 
-                    <ul class="sidebar-menu">
-                        <li class="sidebar-item">
-                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
-                            </svg>
+																Electronics
+																<ul>
+																		<li class="item-submenu">
+																				<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																						<path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
+																				</svg>
+																				
+																				Cell Phones & Smartphones
+																				<ul class="seconlevel">
+																						<li class="item-submenu_deep">Cell Phone Accessories</li>
+																						<li class="item-submenu_deep">Cell Phone Gatgets</li>
+																						<li class="item-submenu_deep">Applications</li>
+																						<li class="item-submenu_deep">Smart Watches</li>
+																						<span class="drop">
+																								Show more
+																								<span class="drop-ico">
+																								<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																										<path  d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#787885"/>
+																								</svg>
+																								</span>
+																						</span>
+																				</ul>
+																		</li>
+																</ul>
+														</li>
+												</ul>
+											</li>
+											<li>
+												Business & Industrial
+											</li>
+											<li>
+												Computers
+												<span class="subtitle">Ecommerce patterns</span>
+											</li>
+											<li>
+												Consumer Electroinics
+											</li>
+											<li>
+												Home & Garden
+											</li>
+												Collectibles
+											</li>
+												<span class="drop">Expand</span>
+										</ul>
 
-                            Electronics
-                            <ul>
-                                <li class="item-submenu">
-                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
-                                    </svg>
-                                    
-                                    Cell Phones & Smartphones
-                                    <ul class="seconlevel">
-                                        <li class="item-submenu_deep">Cell Phone Accessories</li>
-                                        <li class="item-submenu_deep">Cell Phone Gatgets</li>
-                                        <li class="item-submenu_deep">Applications</li>
-                                        <li class="item-submenu_deep">Smart Watches</li>
-                                        <span class="drop">
-                                            Show more
-                                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#787885"/>
-                                            </svg>
-                                        </span>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="sidebar-item"></li>
-                        <li class="sidebar-item"></li>
-                        <li class="sidebar-item"></li>
-                        <li class="sidebar-item"></li>
-                        <li class="sidebar-item"></li>
-                    </ul>
+										<div class="sidebar-drop">
+											<span class="sidebar-text">
+												Collapsed filters
+											</span>
+											<span>
+												<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#2264D1"/>
+												</svg>
+											</span>
+										</div>
                     
                 </section>
 
