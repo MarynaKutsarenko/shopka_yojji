@@ -37,17 +37,33 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  min-height: 90px;
 
   font-size: 20px;
   padding: 0 16px;
-  margin-bottom: 34px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-right: 23px;
+}
+
+.header_link:not(:last-of-type) {
+  margin-right: 36px;
+}
+
+.header_link:last-child {
+  margin-right: 70px;
 }
 
 .header_link {
   display: inline-block;
   color: #5A5B6A;
+}
+
+.header_link:first-child {
+  margin-right: 36px;
 }
 
 .header_link:hover {
@@ -174,7 +190,7 @@ input:focus {
 
 .container {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1460px;
 }
 
 .menu-item-link {
