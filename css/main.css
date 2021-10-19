@@ -276,19 +276,18 @@ input:focus {
   fill: #2264D1;
 }
 
-.card-icon {
-	width: 20px;
-	height: 20px;
+.menu-item-link:hover {
+  color: #2264D1;
 }
 
-.menu-item:hover {
-  color: #2264D1;
+.card-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .main-content {
   display: flex;
 }
-
 /* sidebar */
 .sidebar {
   max-width: 321px;
@@ -412,10 +411,6 @@ input:focus {
 }
 .list-item-link:hover {
   opacity: 0.5;
-}
-
-.item-text {
-  color: #19191D;
 }
 
 .drop {
