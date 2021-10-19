@@ -606,7 +606,6 @@ input:focus {
   outline: none;
   appearance: none;
   cursor: pointer;
-  fill: red;
 }
 
 .select-active {
