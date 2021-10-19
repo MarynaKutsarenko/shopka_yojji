@@ -574,13 +574,15 @@ input:focus {
 
 .content_select-group {
   position: relative;
-  margin-right: 210px;
+  margin-right: 234px;
 }
 
-.content-select:nth-child(odd) {
-  margin-right: 10px;
-  padding: 9px 24px 8px 7px;
-  background-position: 84% 50%;
+.content-select-child {
+  margin-right: 15px;
+  padding: 9px 0px 8px 7px;
+}
+.content-select-childs {
+  padding: 9px 31px 8px 7px;
 }
 
 .content-select:last-child {
@@ -611,6 +613,12 @@ input:focus {
 }
 
 .holder-arr-second {
+  position: absolute;
+  top: 2px;
+  right: 24%;
+}
+
+.holder-arr-last {
   position: absolute;
   top: 2px;
   right: 33%;
