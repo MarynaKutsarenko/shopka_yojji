@@ -276,7 +276,7 @@ input:focus {
   fill: #2264D1;
 }
 
-.menu-item-link:hover {
+.menu-item:hover .menu-item-link {
   color: #2264D1;
 }
 
@@ -606,22 +606,23 @@ input:focus {
   display: inline-block;
 }
 
-.holder-arr {
+.holder-arr ,
+.holder-arr-second ,
+.holder-arr-last {
   position: absolute;
   top: 2px;
+}
+
+.holder-arr {
   right: 17%;
 }
 
 .holder-arr-second {
-  position: absolute;
-  top: 2px;
   right: 24%;
 }
 
 .holder-arr-last {
-  position: absolute;
-  top: 2px;
-  right: 33%;
+  right: 6%;
 }
 
 .style-arr {
@@ -684,10 +685,6 @@ input:focus {
   fill: #787885;
 }
 
-.grid-icon:hover {
-  fill: #0956d3;
-}
-
 .content_grid-group {
   border-radius: 4px;
 }
@@ -708,6 +705,10 @@ input:focus {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+.btn-grid:hover .grid-icon {
+  fill: #0956d3;
 }
 
 .btn-grid:hover {
