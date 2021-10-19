@@ -228,33 +228,28 @@ input:focus {
   max-width: 1526px;
 }
 
-.nav:first-child {
-  padding-left: 19px;
-}
-
 .nav-extra-air {
   margin-left: 19px;
 }
 
 .menu-item-link {
   cursor: pointer;
-  padding: 8px 14px 7px 14px;
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-
   font-size: 14px;
   color: #787885;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  padding: 3px 19px;
 }
 
 .menu-item {
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-block;
   border-radius: 10px;
   background: #fff;
+  margin-right: -2px;
+  padding: 8px 14px;
+  
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -572,16 +567,12 @@ input:focus {
 
 .header-content {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
-
-/* .last-card-air {
-	margin-bottom: 16px;
-} */
 
 .content_select-group {
   position: relative;
-  margin-right: auto;
+  margin-right: 234px;
 }
 
 .content-select:nth-child(odd) {
@@ -633,7 +624,7 @@ input:focus {
   position: relative;
   background: #EBF2FF;
   border-radius: 4px;
-  margin-right:12px;
+  margin-right:36px;
   font-size: 14px;
 }
 
@@ -891,15 +882,14 @@ input:focus {
   flex-wrap: wrap;
 }
 
-.content-box,
-.footer-holder {
+.content-box {
   display: flex;
   max-width: 1125px;
   margin-left: auto;
 }
 
 .content-box {
-  margin-bottom: 50px;
+  margin-bottom: 63px;
 }
 
 .box-info {
@@ -938,7 +928,7 @@ input:focus {
 /* styles for footer  */
 
 .footer {
-  padding: 38px 0px;
+  padding: 28px 0px;
   background: #F7F7FA;
   font-family: 'Inter';
   font-weight: bold;
@@ -947,12 +937,19 @@ input:focus {
 
 .footer-holder {
   display: flex;
+  max-width: 1125px;
   margin-left: auto;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .footer-box {
+  display: inline-flex;
   flex-direction: column;
+  margin-left: -4px;
+}
+
+.footer-first_child {
+  margin-right: 81px;
 }
 
 .footer-title:first-child {
@@ -982,23 +979,21 @@ input:focus {
 }
 
 .footer-item {
-  margin-right: 34px;
+  margin-right: 35px;
 }
 
 .footer-link {
-	padding: 4px 7px 4px 0px;
+	padding: 4px 7px 8px 0px;
 }
 
-.link-push:hover,
-.footer-link:hover {
-  box-shadow: 0px 2px 4px rgba(59, 69, 123, 0.2),
-    0px 4px 8px rgba(92, 107, 192, 0.2);
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+.footer-link_air {
+  margin-right: 23px;
 }
+
+.footer-link:hover {
+  opacity: 0.5;
+}
+
 
 .footer-info {
 	display: flex;
@@ -1007,7 +1002,7 @@ input:focus {
 }
 
 .link-contacts {
-  margin-right: 20px;
+  margin-right: 23px;
 }
 
 .footer-info-text {
@@ -1024,14 +1019,14 @@ input:focus {
   border-radius: 4px;
   color: #2264D1;
   margin-left: 20px;
-	margin-right: 24px;
-  padding: 5px 28px 12px 34px;
+	margin-right: 39px;
+  padding: 9px 24px 10px 20px;
 }
 
 .social-group {
   display: inline-block;
   background: #fff;
-  padding: 4px 4px;
+  padding: 6px 5px;
   text-align: center;
   min-height: 41px;
   min-width: 42px;
@@ -1049,6 +1044,18 @@ input:focus {
 
 .social-facebook {
   background: #3B5998;
+  fill: #fff;
+}
+
+.facebook {
+  width:6px;
+  height: 10px;
+}
+
+.twitter {
+  width: 10px;
+  height: 9px;
+  fill: #F1F2F2;
 }
 
 .social-twitter {
@@ -1071,7 +1078,7 @@ input:focus {
 }
 
 .footer-subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 }
 
 .footer-extrabg {
@@ -1082,11 +1089,12 @@ input:focus {
 .footer-getmoreinfo,
 .footer-getmoreinfo {
   border-right: 1px solid #D1D1E1;
+  margin-left: -4px;
+  padding: 4px 0px 4px 0px;
 }
 
 .mail-ico {
   border-right: 1px solid #5A5B6A;
-  margin-right: 16px;
   padding-right: 10px;
   cursor: pointer;
 }
@@ -1098,12 +1106,13 @@ input:focus {
   font-weight: normal;
   font-size: 14px;
   margin-right: 20px;
+  padding-left: 16px;
 }
 
 .btn-submit {
   background: inherit;
   margin-right: 10px;
-	padding: 9px 31px 9px 12px;
+	padding: 9px 26px 9px 17px;
 }
 
 .footer-getmoreinfo {
@@ -1133,7 +1142,7 @@ input:focus {
 }
 
 .copirate-box {
-  width: 33%;
+  width: 31%;
 }
 
 .copirate-box:last-of-type {
