@@ -856,6 +856,10 @@ input:focus {
 	line-height: 23px;
 }
 
+.last-card-air {
+  margin-bottom: 20px;
+}
+
 .add-air {
 	margin-bottom: 14px;
 }
@@ -1132,6 +1136,7 @@ input:focus {
   border-right: 1px solid #D1D1E1;
   margin-left: -4px;
   padding: 4px 0px 4px 0px;
+  cursor: pointer;
 }
 
 .mail-ico {
