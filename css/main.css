@@ -155,7 +155,6 @@ input:focus {
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2),0px 4px 8px rgba(41, 121, 255, 0.2);
 }
 
-.list-item-link:hover,
 .drop:hover,
 .drop-last:hover,
 .menu-item:hover,
@@ -297,7 +296,7 @@ input:focus {
   flex-direction: column;
   color: #19191D;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   padding-left: 17px;
   margin-right: auto;
@@ -358,6 +357,7 @@ input:focus {
 
 .list-item>.menu-levelup-to {
   padding: 0px 8px;
+  font-weight: 400;
 }
 
 .menu-levelup-to>.list-item>.list-item-link:first-child {
@@ -409,6 +409,13 @@ input:focus {
 .item-subtitle {
   font-size: 14px;
   color: #787885;
+}
+.list-item-link:hover {
+  opacity: 0.5;
+}
+
+.item-text {
+  color: #19191D;
 }
 
 .drop {
@@ -587,9 +594,10 @@ input:focus {
 }
 
 .content-select {
-  background-image: url('../img/arr-select.svg');
+  background-image: url("../img/arr-select.svg");
   background-repeat: no-repeat;
-  background: #fff;
+  /* background: inherit;  */
+  /* background: transparent; */
 
   border: 1px solid #B4B4BB;
   border-radius: 4px;
@@ -598,6 +606,7 @@ input:focus {
   outline: none;
   appearance: none;
   cursor: pointer;
+  fill: red;
 }
 
 .select-active {
@@ -839,7 +848,7 @@ input:focus {
   font-size: 14px;
   color: #787885;
   min-height: 40px;
-	max-width: 225px;
+	max-width: 233px;
 }
 
 .last-card-extraair {
@@ -925,7 +934,6 @@ input:focus {
   font-size: 14px;
   color: #5A5B6A;
 }
-
 /* styles for footer  */
 
 .footer {
@@ -1046,6 +1054,17 @@ input:focus {
 .social-facebook {
   background: #3B5998;
   fill: #fff;
+}
+
+.social-facebook:hover ,
+.social-twitter:hover,
+.footer-track:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .facebook {
