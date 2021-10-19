@@ -150,10 +150,18 @@ input:focus {
   display: inline-block;
 }
 
-.active {
+.active-btn {
+  height: 45px;
+}
+
+.active-btn:hover {
+  opacity: 0.5;
+}
+
+.active-btn,
+.active-item {
   border: none !important;
   box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2),0px 4px 8px rgba(41, 121, 255, 0.2);
-  height: 45px;
 }
 
 .drop:hover,
