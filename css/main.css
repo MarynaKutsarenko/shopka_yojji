@@ -574,12 +574,12 @@ input:focus {
 
 .content_select-group {
   position: relative;
-  margin-right: 234px;
+  margin-right: 210px;
 }
 
 .content-select:nth-child(odd) {
   margin-right: 10px;
-  padding: 9px 0px 8px 7px;
+  padding: 9px 24px 8px 7px;
   background-position: 84% 50%;
 }
 
@@ -589,11 +589,7 @@ input:focus {
 }
 
 .content-select {
-  background-image: url("../img/arr-select.svg");
-  background-repeat: no-repeat;
-  /* background: inherit;  */
-  /* background: transparent; */
-
+  background: transparent;
   border: 1px solid #B4B4BB;
   border-radius: 4px;
   color: #787885;
@@ -601,6 +597,28 @@ input:focus {
   outline: none;
   appearance: none;
   cursor: pointer;
+}
+
+.holder-select {
+  position: relative;
+  display: inline-block;
+}
+
+.holder-arr {
+  position: absolute;
+  top: 2px;
+  right: 17%;
+}
+
+.holder-arr-second {
+  position: absolute;
+  top: 2px;
+  right: 33%;
+}
+
+.style-arr {
+  width: 10px;
+  height: 5px;
 }
 
 .select-active {
