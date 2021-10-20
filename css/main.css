@@ -37,6 +37,7 @@ body {
   max-width: 1970px;
   align-items: center;
   margin-bottom: 8px;
+  padding: 24px 10px;
 }
 
 .logo {
@@ -72,6 +73,10 @@ body {
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #19191D;
 }
 
 .input-group {
@@ -133,13 +138,11 @@ input:focus {
 
 .buttons-controll {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .btn {
   text-align: center;
-  box-sizing: border-box;
   background: #fff;
   border: 1px solid #9DC2FF;
   border-radius: 4px;
@@ -147,17 +150,13 @@ input:focus {
   color: #2264D1;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  display: inline-block;
-}
-
-.active-btn {
-  height: 45px;
 }
 
 .active-btn:hover {
   opacity: 0.5;
 }
 
+.content-btn_active,
 .active-btn,
 .active-item {
   border: none !important;
@@ -190,14 +189,15 @@ input:focus {
 
 .control-info {
   display: none;
-  justify-content: space-between;
   font-weight: 700;
+  padding-top: 10px;
 }
 
 .btn-cart {
   margin-right: 16px;
-  padding: 13px 12px 9px 13px;
+  padding: 8px 12px 8px 13px;
   position: relative;
+  max-height: 40px;
 }
 
 .mearge-count {
@@ -221,10 +221,6 @@ input:focus {
 
 .show {
   display: flex;
-}
-
-.avatar-holder {
-  padding-top: 6px;
 }
 
 .avatar-img {
